@@ -1,0 +1,564 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* HEADER */
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#HeroTab{
+    display: none;
+}
+#artdesk{
+    display: none;
+}
+#HeroDesk{
+    display: none;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+}
+.headcontent{
+    padding-left: 16px;
+}
+#art{
+    max-width: 75%;
+    height: 110px;
+    margin: 32px 0px 32px; 
+}
+p{
+    font-family: "outfit";
+    font-weight: 300;
+    color: #444444;
+    line-height: 28px;
+    font-size: 18px;
+}
+#MapButton{
+    width: 204px;
+    height: 72px;
+    border: none;
+    background-color: #151515;
+    color: white;
+    font-family: "Big Shoulders Display";
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 3.4px;
+    line-height: 24px;
+}
+#arrowRight{
+    width: 56px;
+    height: 72px;
+    background: #D5966C;
+    padding: 24px;
+}
+.location{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+
+
+/* LOCATION PAGE */
+
+#maptab, #mapdesk{
+    display: none;
+}
+#map1{
+    width: 100%;
+}
+.locationmap{
+    display: flex;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+.LocDiv1{
+    width: 100%;
+    height: 493px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 48px 16px 55px 16px;
+    background-color: black;
+}
+.LocDiv1 h1{
+    font-family: "Big shoulders display";
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    color: white;
+}
+.LocDiv1 h2{
+    font-family: "Big shoulders display";
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 32px;
+    color: #D5966C;
+}
+.LocDiv1 p{
+    color: white;
+}
+
+.footer2{
+    background: #D5966C;
+    height: 336px;
+}
+#p5{
+    font-size: 16px;
+    line-height: 26px;
+    color: black;
+}
+#footDiv2{
+    padding: 48px 32px 0px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 38px;
+}
+#insta{
+    padding-left: 16px;
+}
+#twit{
+    padding-left: 16px;
+}
+.Div99{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+/* MIDDLE */
+
+#gridtab1, #gridtab2, #gridtab3{
+    display: none;
+}
+#griddesk1, #griddesk2, #griddesk3{
+    display: none;
+}
+
+.middlecontent{
+    display: flex;
+    flex-direction: column;
+    padding: 120px 16px 120px 16px;
+}
+#grid1{
+    width: 100%;
+    height: 320px;
+}
+
+#YourDay{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.YourText{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+
+h2{
+    font-family: "Big Shoulders Display";
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 45px;
+}
+#grid2{
+    width: 100%;
+    height: 480px;
+    padding-top: 32px;
+}
+#grid3{
+    width: 100%;
+    height: 200px;
+    padding-top: 16px;
+}
+.bottomDiv{
+    background: black;
+    height: 293px;
+    margin-top: 16px;
+}
+.bottomDiv, #p3{ 
+    color: white;
+}
+
+.come{
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px;
+    gap: 24px;
+}
+
+/* FOOTER */
+
+footer{
+    background: black;
+    height: 336px;
+}
+#p4{
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+}
+#footDiv{
+    padding: 48px 32px 0px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 38px;
+}
+#insta{
+    padding-left: 16px;
+}
+#twit{
+    padding-left: 16px;
+}
+
+
+
+
+
+@media(600px <= width <= 1279px){
+
+    /* HEAD */
+
+    #HeroMob{
+        display: none;
+    }
+    #HeroTab{
+        display: block;
+        width: 437px;
+        height: 700px;
+    }
+    
+    .head{
+        flex-direction: row;
+    }
+    .headcontent{
+        position: absolute;
+        left: 50.50%;
+        top: 15%;
+    }
+
+    /* MIDDLE */
+
+    #grid1, #grid2, #grid3{
+        display: none;
+    }
+    #gridtab1, #gridtab2, #gridtab3{
+        display: block;
+    }
+
+    .YourText{
+        width: 32%;
+        padding-top: 30px;
+    }
+
+    #gridtab1{
+        height: 400px;
+    }
+    #gridtab2{
+        width: 398px;
+    }
+    #gridtab3{
+        width: 100%;
+    }
+    .img-container{
+        display: flex;
+        gap: 11px;
+        margin-top: 11px;
+    }
+
+    .bottomDiv{
+        display: flex;
+        flex-direction: column;
+        background: white;
+        height: 100%;
+        width: none;
+        padding: 0;
+        margin: 0;
+        gap: 11px;
+    }
+    #p3{
+        width: 80%;
+    }
+
+    h2{
+        margin: 0;
+        padding: 0;
+    }
+
+    .come{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        background: black;
+        padding: 85px 29px;
+    }
+
+    #YourDay{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    /*FOOTER*/
+
+    footer{
+        height: 216px;
+    }
+
+    #footDiv{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    /* LOCATION MAP FOR TABLET */
+
+    #map1{
+        display: none;
+    }
+    #maptab{
+        display: block;
+        width: 100%;
+    }
+    .LocDiv1{
+        padding: 88px 40px 80px 40px;
+        flex-direction: row;
+        gap: 70px;
+    }
+
+    .locationmap{
+        left: 40px;
+    }
+    #footDiv2{
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-around;
+    }
+    .footer2{
+        height: 216px;
+    }
+
+}
+
+
+
+@media(min-width: 1280px){
+    #grid1, #grid2, #grid3{
+        display: none;
+    }
+    #map1, #maptab{
+        display: none;
+    }
+    #mapdesk{
+        display: block;
+        width: 100%;
+    }
+    #HeroMob{
+        display: none;
+    }
+    #HeroDesk, #griddesk1, #griddesk2, #griddesk3{
+        display: block;
+    }
+
+    /* HEAD */
+
+    .head{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #HeroDesk{
+        height: 800px;
+
+    }
+    .blackdiv{
+        width: 450px;
+        height: 800px;
+        background-color: black;
+    }
+    #art{
+        display: none;
+    }
+    #artdesk{
+        display: block;
+        mix-blend-mode: difference;
+        position: absolute;
+        right: 53%;
+        top: 16%;
+        width: 509px;
+        height: 176px;
+    }
+    .location{
+        position: relative;
+        right: 80px;
+        top: 245px;
+        cursor: pointer;
+    }
+    .location:hover #arrowRight{
+        background-color: black;
+        transition: 0.3s ease-in;
+    }
+    .location:hover #MapButton{
+        background-color: #D5966C;
+        transition: 0.3s ease-in;
+    }
+
+    .headcontent{
+        padding: 0;
+    }
+    #p1{
+        position: relative;
+        right: 80px;
+        top: 210px;
+    }
+    
+    /* MIDDLE */
+
+    #griddesk1{
+        height: 400px;
+    }
+    #griddesk2{
+        height: 720px;
+    }
+    #griddesk3{
+        height: 313px;
+    }
+    #YourDay{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 150px;
+    }
+    .img-container{
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    #p2{
+        font-size: 22px;
+        line-height: 32px;
+    }
+    h2{
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .middlecontent{
+        padding: 150px;
+    }
+    .bottomDiv{
+        display: flex;
+        flex-direction: column;
+        background: white;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        gap: 30px;
+    }
+    .come{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: black;
+        padding: 85px 29px;
+    }
+    #p3{
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+
+    /* FOOTER DESKTOP */
+
+    footer{
+        height: 244px;
+    }
+
+    #footDiv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #p4{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    #footimg{
+        height: 58px;
+    }
+
+    /* LOCATION PAGE FOR DESKTOP */
+
+    .locationmap{
+        left: 140px;
+    }
+    .locationmap:hover #arrowRight{
+        background-color: #151515;
+        transition: 0.3s ease-in;
+    }
+    .locationmap:hover #MapButton{
+        background-color: #D5966C;
+        transition: 0.3s ease-in;
+    }
+
+    .LocDiv1{
+        flex-direction: row;
+        gap: 220px;
+        padding: 105px 165px 128px 165px;
+    }
+    .LocDiv1 h1{
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .LocDiv1 h2{
+        font-size: 36px;
+        line-height: 36px;
+    } 
+    .LocDiv1 p{
+        font-size: 22px;
+        line-height: 32px;
+    }
+    #footDiv2{
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-around;
+    }
+    .footer2{
+        height: 244px;
+    }
+    #footimg2{
+        height: 58px;
+    }
+    #p5{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+
+}
